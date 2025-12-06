@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Particle Sphere - Single Hand</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <video id="input-video"></video>
+
+    <div id="ui-container">
+        <h2>Cấu hình Hạt</h2>
+        
+        <div class="control-group">
+            <label for="colorPicker">Màu sắc:</label>
+            <input type="color" id="colorPicker" value="#00ffff">
+        </div>
+
+        <div id="status">Đang tải mô hình AI...</div>
+        <div class="instruction">
+            Sử dụng <b>1 bàn tay</b> (trái/phải).<br>
+            <b>Xòe tay:</b> Hạt mở rộng.<br>
+            <b>Nắm tay:</b> Hạt thu về hình cầu.
+        </div>
+    </div>
+
+    <div id="loading">Đang khởi động Camera & AI...</div>
+
+    <div id="canvas-container"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
